@@ -263,28 +263,34 @@ namespace ConsoleApplication1
             bool cbool = true;
 
             string[] tempLines2 = new string[40];
-            for (int i = 0; i < ymap; i++)
-            {
-                for (int j = 0; j < xmap; j++)
-                {
-                    if (this.Tilemap[j, i].Wall)
-                    {
-                        Console.Write(1);
-                        //trial1sheet1.Cells[j+1, i+1] = 1;
-                        tempLines2[i] = tempLines2[i] + 1;
 
-                    }
+            //To be used for displaying the map as it is being generated,
+            //to verify the functionality of the filler
 
-                    else
-                    {
-                        Console.Write(0);
-                        //trial1sheet1.Cells[j+1, i+1] = 0;
-                        tempLines2[i] = tempLines2[i] + 0;
+            //for (int i = 0; i < ymap; i++)
+            //{
+            //    for (int j = 0; j < xmap; j++)
+            //    {
+            //        if (this.Tilemap[j, i].Wall)
+            //        {
+            //            Console.Write(1);
+            //            //trial1sheet1.Cells[j+1, i+1] = 1;
+            //            tempLines2[i] = tempLines2[i] + 1;
 
-                    }
-                }
-                Console.WriteLine("");
-            }
+            //        }
+
+            //        else
+            //        {
+            //            Console.Write(0);
+            //            //trial1sheet1.Cells[j+1, i+1] = 0;
+            //            tempLines2[i] = tempLines2[i] + 0;
+
+            //        }
+            //    }
+            //    Console.WriteLine("");
+            //}
+
+
             //System.IO.File.WriteAllLines(@"C:\Users\Nostariel\Desktop\New folder\WriteLines1.txt", tempLines2);
 
             for (int i = 1; i < xmap - 2; i++)

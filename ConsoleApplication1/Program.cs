@@ -16,6 +16,7 @@ namespace ConsoleApplication1
 
     class Program
     {
+        
         static void Main(string[] args)
         {
             /*
@@ -49,32 +50,34 @@ namespace ConsoleApplication1
             Console.WriteLine("Loops until quit:", "");
             //int quit = Int32.Parse(Console.ReadLine());
             int quit = 500;
-            Floor tempfloor = new Floor(xmap, ymap, loops, quit, 0);
+
+            //First set of testing:
+            //Floor tempfloor = new Floor(xmap, ymap, loops, quit, 0);
 
 
             string[] tempLines = new string[40];
             
-            for (int i = 0; i < ymap; i++)
-            {
-                for (int j = 0; j < xmap; j++)
-                {
-                    if (tempfloor.Tilemap[j, i].Wall)
-                    {
-                        Console.Write(1);
-                        //trial1sheet1.Cells[j+1, i+1] = 1;
-                        tempLines[i] = tempLines[i] + 1;
+            //for (int i = 0; i < ymap; i++)
+            //{
+            //    for (int j = 0; j < xmap; j++)
+            //    {
+            //        if (tempfloor.Tilemap[j, i].Wall)
+            //        {
+            //            Console.Write(1);
+            //            //trial1sheet1.Cells[j+1, i+1] = 1;
+            //            tempLines[i] = tempLines[i] + 1;
 
-                    }
+            //        }
 
-                    else
-                    {
-                        Console.Write(0);
-                        //trial1sheet1.Cells[j+1, i+1] = 0;
-                        tempLines[i] = tempLines[i] + 0;
-                    }
-                }
-                Console.WriteLine("");
-            }
+            //        else
+            //        {
+            //            Console.Write(0);
+            //            //trial1sheet1.Cells[j+1, i+1] = 0;
+            //            tempLines[i] = tempLines[i] + 0;
+            //        }
+            //    }
+            //    Console.WriteLine("");
+            //}
             
             //iDunno.Quit();
 
