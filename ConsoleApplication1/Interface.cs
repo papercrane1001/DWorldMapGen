@@ -32,9 +32,9 @@ namespace ConsoleApplication1
         {
             int xtemp;
             int ytemp;
-            for (double theta = 0; theta < 360; theta+= .5)
+            for (double theta = 0; theta < 360; theta+= .2)
             {
-                for (int a = 1; a < 60; a++)
+                for (double a = 1; a < 60; a+= .5)
                 {
                     xtemp = Convert.ToInt32(x + a * Math.Cos(theta));
                     ytemp = Convert.ToInt32(y + a * Math.Sin(theta));
