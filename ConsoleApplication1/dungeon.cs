@@ -10,7 +10,7 @@ namespace ConsoleApplication1
     
     class Item
     {
-
+        
     }
 
     class Construction
@@ -164,7 +164,7 @@ namespace ConsoleApplication1
     class Floor
     {
         private Tile[,] map;
-        private int[,] visiblemap;
+        public int[,] visiblemap = new int[40,40];
         private Construction con = new Construction();
         private Random rand = new Random();
         public Floor() { }
